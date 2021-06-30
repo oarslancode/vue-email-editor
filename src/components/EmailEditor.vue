@@ -25,6 +25,8 @@ export default {
       type: String,
       default: '500px',
     },
+    customJS,
+    
   },
   computed: {
     id() {
@@ -59,6 +61,8 @@ export default {
         ...options,
         id: this.id,
         displayMode: 'email',
+        customJS: this.customJS,
+        
         source: {
           name: pkg.name,
           version: pkg.version,
