@@ -25,7 +25,7 @@ export default {
       type: String,
       default: '500px',
     },
-    customJS,
+    customJS: String,
     
   },
   computed: {
